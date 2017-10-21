@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Is your love intergalacticly legal?</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body>
+  <nav class="navbar navbar-light bg-danger">
+    <span class="navbar-brand mb-0 h1">Is your love intergalacticly legal?</span>
+  </nav>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-3">Is your love legal in the eyes of the intergalactic law?</h1>
+        <p class="lead">Let's go! Sidenote: this doesn't work if both partners are above the age of 14</p>
+         <script>
+        var age1 = document.getElementById("age1");
+        var age2 = document.getElementById("age2");
+        //var legal = false;
+        var msgtrue = "Ayyy Your realtionship is legal in the eyes of the intergalactic law";
+        var msgfalse = "Hmmm re-evaluate that or they gonna get you";
+        function bounds(age1, age2){
+            var limit = (document.getElementById('age1').value / 2) + 7;
+                if (age2 >= limit) {
+                    document.getElementById("output").innerHTML = msgtrue;
+                    } else {
+                      document.getElementById("output").innerHTML = msgfalse
+                    }
+                }
+        //var lowbound =
+        </script>
+        <form>Your age:<input type="text" name="age1" id="age1">
+              Your partner's age:<input type="text" name="age2" id="age2">
+        <button type="button" class="btn btn-primary bg-danger" onclick="bounds(document.getElementById('age1').value,document.getElementById('age2').value)">Submit</button>
+        </form>
+        <br></br>
+        <h2 id="output" class="text-center, font-weight-bold, text-success"></h2>
+      </div>
+    </div>
+    <div>
+      <h6></h6>
+      <div class="text-center">
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!--<script type="text/javascript" src="index.js"></script>-->
+  </body>
+</html>
